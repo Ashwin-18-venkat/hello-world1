@@ -216,6 +216,14 @@
 		</dependency>
     </dependencies>
   </dependencyManagement>
+	
+	<servers>
+        <server>
+            <id>35.223.216.217</id>
+            <username>admin</username>
+            <password>admin123</password>
+        </server>
+</servers>
 
   <scm>
     <connection>scm:git:git@github.com:jleetutorial/maven-project.git</connection>
