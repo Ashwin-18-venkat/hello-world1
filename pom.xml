@@ -80,11 +80,14 @@
               <artifactId>findbugs-maven-plugin</artifactId>
             </plugin>
 		  
-	    <plugin>
- 	       <groupId>org.apache.maven.plugins</groupId>
-               <artifactId>maven-war-plugin</artifactId>
-               <version>2.2</version>
-            </plugin>
+           <plugin>
+	     <groupId>org.apache.maven.plugins</groupId>
+	     <artifactId>maven-war-plugin</artifactId>
+	     <configuration>
+		<!-- Set WebContent directory as Web directory -->
+		<webappDirectory>WebContent</webappDirectory>
+		<warSourceDirectory>WebContent</warSourceDirectory>
+	   </configuration>
 		  
             <plugin>
               <groupId>org.codehaus.mojo</groupId>
